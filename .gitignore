@@ -19,3 +19,13 @@ __pycache__/
 # Ignore other large or temporary files
 *.log
 *.tmp
+
+# Ignore PyCharm settings
+.idea/
+
+# Ignore dataset zip file
+chest-xray-pneumonia.zip
+
+# Ignore temporary GPU test scripts
+check_gpu.py
+test_gpu_cnn.py
