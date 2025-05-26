@@ -1,0 +1,21 @@
+# Ignore dataset directory
+chest_xray/
+
+# Ignore large model files
+pneumonia_cnn_model.keras
+*.h5
+
+# Ignore Conda environment
+/Users/wardabdelhafez/miniconda3/envs/medical_cnn/
+/Users/wardabdelhafez/miniconda3/envs/cnn_pneumonia/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore other large or temporary files
+*.log
+*.tmp
