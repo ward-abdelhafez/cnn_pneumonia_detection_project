@@ -16,12 +16,6 @@ A Convolutional Neural Network (CNN) for detecting pneumonia in chest X-ray imag
 - TensorFlow 2.15.0 with `tensorflow-metal` (for M1 GPU support)
 - Other dependencies: `numpy`, `matplotlib`, `reportlab`, `scikit-learn`
 
-Install dependencies:
-```bash
-conda create -n medical_cnn python=3.9
-conda activate medical_cnn
-pip install tensorflow==2.15.0 tensorflow-metal numpy matplotlib reportlab scikit-learn
-
 ## Model Principles
 This model uses a Convolutional Neural Network (CNN) based on VGG16, with the following principles:
 - **Feature Extraction**: Convolutional layers extract spatial features (e.g., lung patterns) from X-ray images.
@@ -30,5 +24,12 @@ This model uses a Convolutional Neural Network (CNN) based on VGG16, with the fo
 
 ### Explainability
 The CNN is a non-intelligible (black box) model due to its complexity, with millions of parameters learning abstract features. To improve interpretability, techniques like saliency maps or Grad-CAM can be applied to visualize which regions of the X-ray influence the prediction.
+
+Install dependencies:
+```bash
+conda create -n medical_cnn python=3.9
+conda activate medical_cnn
+pip install tensorflow==2.15.0 tensorflow-metal numpy matplotlib reportlab scikit-learn
+
 
 
